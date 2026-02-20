@@ -7,7 +7,7 @@ class MyDataMethods:
         return psycopg2.connect(
             host='localhost',
             user='postgres',
-            password='@1157Dipikass',
+            password='your data base password',
             dbname='eduSphere',
             port='5432'
         )
@@ -596,7 +596,4 @@ class MyDataMethods:
             cursor.close()
             db.close()
 
-if __name__ == '__main__':
-    xx = MyDataMethods()
-    xx.updateBalance(12,100)
-    print(xx.getResultForInstituate(18))
+
