@@ -5,8 +5,8 @@ import math
 
 class SendEmail:
     def result_email(reciver,user_name,course_title,score):
-        sender_email = "edusphere546@gmail.com"
-        sender_password = "kikk qfxe qkoq arom"
+        sender_email = ""
+        sender_password = ""
         receiver_email = reciver
 
         msg = EmailMessage()
@@ -25,9 +25,9 @@ class SendEmail:
 
     def admin_login_email(user):
         otp = numpy.random.randint(1001,9999)
-        sender_email = "edusphere546@gmail.com"
-        sender_password = "kikk qfxe qkoq arom"
-        receiver_email = 'patelpreyans@gmail.com'
+        sender_email = ""
+        sender_password = ""
+        receiver_email = ''
 
         msg = EmailMessage()
         msg["Subject"] = f"Admin Login Otp"
@@ -45,6 +45,3 @@ class SendEmail:
             print('error to send mail:- ',e)
         return otp
         
-
-if __name__ == '__main__':
-    SendEmail.admin_login_email('preyans')
